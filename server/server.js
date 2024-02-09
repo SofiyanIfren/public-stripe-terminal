@@ -5,7 +5,7 @@ const cors = require('cors');
 app.use(express.json({}));
 app.use(cors());
 
-const stripe = require("stripe")("sk_test_51NUMLRL40JtRd3xc2BmtyjriYrQaDXh4v3F3m6EX5Awlem0qmjoaouJXh15CDs95RGT6zQyie8aKQyjFDN3vOGbx00fPC8UoGM");
+const stripe = require("stripe")("");
 
 app.get("/readers", async (req, res) => {
     try {
